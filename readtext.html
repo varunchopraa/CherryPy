@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+	<h1 id="hello" onclick="shit()">Hello</h1>
+	<script type="text/javascript">
+	function shit(){
+		var stringData = $.ajax({
+            url: "tags.txt",
+            async: false
+        }).responseText;
+    	var text = stringData.split("\n");
+    	alert(text)
+    	var x = document.getElementById("hello");
+        x.value = "lolz";
+	}    
+	</script>
+</body>
+</html>
